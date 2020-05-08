@@ -62,11 +62,11 @@ if staff_choice == 'a':
             elif action == 'c':
                 if os.path.exists('session.txt'):
                     os.remove('session.txt')
-                    print('session file removed!')
+                    print('Logged out!')
                     break
 
             else:
-                print('Please select a valid option!')
+                print('Please select a valid option: ')
 
         # break
 
