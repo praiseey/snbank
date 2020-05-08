@@ -5,7 +5,7 @@ import os
 import sys
 
 staff = ['praise', 'praiseinua', 'p@snbank.com', 'Praise Inua']
-f = open('log.txt', 'w+')
+f = open('staff.txt', 'w+')
 f.write(str(staff))
 f.close()
 
@@ -15,7 +15,7 @@ staff_choice = input('A. login \nPress any key to Close App \nChoose action: ').
 if staff_choice == 'a':
     username = str(input('Enter your username: '))
     password = str(input('Enter your password: '))
-    f = open('log.txt', 'r')
+    f = open('staff.txt', 'r')
     if username != staff[0] or password != staff[1]:
         print('Invalid username or password. Try again')
     else:
